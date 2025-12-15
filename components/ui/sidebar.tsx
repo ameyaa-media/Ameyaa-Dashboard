@@ -268,6 +268,7 @@ function SidebarTrigger({
       size="icon"
       className={cn("size-7", className)}
       onClick={(event: React.MouseEvent) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onClick?.(event as any);
         toggleSidebar();
       }}
